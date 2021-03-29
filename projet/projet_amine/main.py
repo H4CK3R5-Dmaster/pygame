@@ -31,5 +31,4 @@ PLAYER1=PLAYER(name_player1,character1)
 PLAYER2=PLAYER(name_player2,character2)
 insult=INSULT()
 insult.display_insults_list()
-def Combat(PLAYER1,PLAYER2):
-    print("helol")
+
