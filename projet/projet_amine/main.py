@@ -1,6 +1,10 @@
 from Player import PLAYER
 from insults import INSULT
 characters=["Dame","gentleman","poor","gangster","king","master ocean"]
+def Display_insult_list(list):
+    for index in range(0,len(list),1):
+        print("                ", index+1, "-->", list[index])
+    print("\n")
 def character_select(arr):
     for i in range(0,len(arr),1):
         print(i+1,"-->",arr[i])
@@ -30,6 +34,17 @@ print(name_player2,"-->",character2)
 PLAYER1=PLAYER(name_player1,character1)
 PLAYER2=PLAYER(name_player2,character2)
 insult=INSULT()
-insult.display_insults_list()
 def Combat(PLAYER1,PLAYER2):
-    print("helol")
+    list=[]
+    while PLAYER1.pv>0 and PLAYER2.pv>0:
+        if list==[]:
+            list=insult.generate_insults_list()
+        if list !=[]:
+            Display_insult_list(list)
+            print("le choix de ",PLAYER1.name, ":")
+            choix1=int(input())
+            while choix1<1 or choix1>len(list):
+                print("le choix de ",PLAYER1.name, ":")
+                choix1=int(input())   
+            list.remove(list[choix1-1])         
+Combat(PLAYER1,PLAYER2)

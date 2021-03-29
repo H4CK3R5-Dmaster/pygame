@@ -8,6 +8,9 @@ class PLAYER:
         self.character=caractere
         if self.character=="Dame":
             self.type = "ground"
+    # def choose_insult(self):
+        
+    # def display_list(self)
 
     # def choose_insult(self,)
 
