@@ -34,6 +34,7 @@ print(name_player2,"-->",character2)
 PLAYER1=PLAYER(name_player1,character1)
 PLAYER2=PLAYER(name_player2,character2)
 insult=INSULT()
+<<<<<<< HEAD:projet/projet_amine/main copy.py
 def Combat(PLAYER1,PLAYER2):
     list=[]
     while PLAYER1.pv>0 and PLAYER2.pv>0:
@@ -48,3 +49,7 @@ def Combat(PLAYER1,PLAYER2):
                 choix1=int(input())   
             list.remove(list[choix1-1])         
 Combat(PLAYER1,PLAYER2)
+=======
+insult.display_insults_list()
+
+>>>>>>> 80427890e02a12153b5e0adcbdc906043847170f:projet/projet_amine/main.py
