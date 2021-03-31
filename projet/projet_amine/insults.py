@@ -17,8 +17,8 @@ class INSULT:
 
     def generate_random_list(self):
         Random_List = []
-        if len(self.Sujet)>3:
-            sujet = randint(1, 2)
+        if len(self.Sujet)>1:
+            sujet = randint(2, 3)
             suj_val = randint(0, len(self.Sujet)-1)
             for j in range(0, sujet, 1):
                 Random_List.append(self.Sujet[suj_val].name)
@@ -26,7 +26,7 @@ class INSULT:
                 suj_val = randint(0, len(self.Sujet)-1)
             # while self.Sujet[suj_val].name in Random_List:
             #     suj_val=randint(0,len(self.Sujet)-1)
-        if len(self.Verbe)>3:
+        if len(self.Verbe)>2:
             verbe = randint(1, 2)
             ver_val = randint(0, len(self.Verbe)-1)
             for vb in range(0, verbe, 1):
@@ -35,7 +35,7 @@ class INSULT:
                 ver_val = randint(0, len(self.Verbe)-1)
             # while self.Verbe[ver_val].name in Random_List:
             #     ver_val=randint(1,len(self.Verbe)-1)
-        if len(self.Verbe_adj)>3:
+        if len(self.Verbe_adj)>2:
             verbe_adj = randint(1, 2)
             ver_adj_val = randint(0, len(self.Verbe_adj)-1)
             for vb_adj in range(0, verbe_adj, 1):
@@ -44,7 +44,7 @@ class INSULT:
                 ver_adj_val = randint(0, len(self.Verbe_adj)-1)
             # while self.Verbe[ver_adj_val].name in Random_List:
             #     ver_adj_val=randint(1,len(self.Verbe_adj)-1)
-        if len(self.Adj)>3:
+        if len(self.Adj)>2:
             adjective = randint(1, 2)
             adj_val = randint(0, len(self.Adj)-1)
             for adj in range(0, adjective, 1):
@@ -53,7 +53,7 @@ class INSULT:
                 adj_val = randint(0, len(self.Adj)-1)
                 # while self.Adj[adj_val].name in Random_List:
                 #     adj_val=randint(1,len(self.Adj)-1)
-        if len(self.COD)>3:
+        if len(self.COD)>2:
             cod_rep = randint(1, 2)
             cod_val = randint(0, len(self.COD)-1)
             for cod_i in range(0, cod_rep, 1):
