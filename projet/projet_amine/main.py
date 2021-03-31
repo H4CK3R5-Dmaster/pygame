@@ -128,6 +128,7 @@ def Combat(PLAYER1, insult1, PLAYER2, insult2):
                     2, PLAYER1.name+" Tu veux attaquer?:\n\n1-->oui\n\n2-->non  ")
                 if choixattack1 == 1:
                     s1 = sum_insults(tabP1, insult1)
+                    print(PLAYER1.name,"a fait ",s1," de damage à ",PLAYER2.name)
                     PLAYER2.pv -= s1
                     tabP1 = []
             print(PLAYER1.name, " = ", PLAYER1.pv)
@@ -146,6 +147,7 @@ def Combat(PLAYER1, insult1, PLAYER2, insult2):
                     2, PLAYER2.name+" Tu veux attaquer?:\n\n1-->oui\n\n2-->non  ")
                 if choixattack2 == 1:
                     s2 = sum_insults(tabP2, insult2)
+                    print(PLAYER2.name,"a fait ",s2," de damage à ",PLAYER1.name)
                     PLAYER1.pv -= s2
                     tabP2 = []
             list.remove(list[choix2-1])
