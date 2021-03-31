@@ -5,14 +5,14 @@ from liste_insultes import Liste_insultes
 class INSULT:
     def __init__(self):
         self.Sujet = [Liste_insultes("tu", 2), Liste_insultes("ton père", 7), Liste_insultes("ta mère", 9), Liste_insultes(
-            "ton mari", 4), Liste_insultes("ta femme", 4), Liste_insultes("ta soeur", 5), Liste_insultes("ton frère", 5)]
+            "ton mari", 4), Liste_insultes("ta femme", 4), Liste_insultes("ta soeur", 5), Liste_insultes("ton frère", 5), Liste_insultes("ton frère", 5), Liste_insultes("ton frère", 5), Liste_insultes("ton frère", 5)]
         self.Verbe = [Liste_insultes("es(t)", 2), Liste_insultes("a(s)", 2), Liste_insultes("n'es(t) pas", 2), Liste_insultes("n'a(s) pas", 2), Liste_insultes(
-            "n'es(t) pas", 2), Liste_insultes("a(s) triché", 2), Liste_insultes("n'a(s) pas regardé", 2), Liste_insultes("rassemble(s) à", 2)]
+            "n'es(t) pas", 2), Liste_insultes("a(s) triché", 2), Liste_insultes("n'a(s) pas regardé", 2), Liste_insultes("rassemble(s) à", 2), Liste_insultes("rassemble(s) à", 2), Liste_insultes("rassemble(s) à", 2), Liste_insultes("rassemble(s) à", 2)]
         self.Verbe_adj = [Liste_insultes("es(t) lent comme", 2), Liste_insultes(
-            "es(t) stupide comme", 2), Liste_insultes("es(t) con comme", 2), Liste_insultes("est aveugle comme", 2), Liste_insultes("est aveugle comme", 2)]
+            "es(t) stupide comme", 2), Liste_insultes("es(t) con comme", 2), Liste_insultes("est aveugle comme", 2), Liste_insultes("est aveugle comme", 2), Liste_insultes("est aveugle comme", 2), Liste_insultes("est aveugle comme", 2)]
         self.Adj = [Liste_insultes("stupide", 10), Liste_insultes("un(e) con", 8), Liste_insultes(
-            "intelligent(e)", 4), Liste_insultes("petit comme", 5), Liste_insultes("grand", 7), Liste_insultes("un(e) idiot", 7)]
-        self.COD = [Liste_insultes("star wars", 4), Liste_insultes("le train", 5), Liste_insultes("Prison Break", 5), Liste_insultes("La casa del papel", 5), Liste_insultes(
+            "intelligent(e)", 4), Liste_insultes("petit comme", 5), Liste_insultes("grand", 7), Liste_insultes("un(e) idiot", 7), Liste_insultes("un(e) idiot", 7), Liste_insultes("un(e) idiot", 7)]
+        self.COD = [Liste_insultes("star wars", 4), Liste_insultes("le train", 5), Liste_insultes("le train", 5), Liste_insultes("le train", 5), Liste_insultes("Prison Break", 5), Liste_insultes("La casa del papel", 5), Liste_insultes(
             "la maison", 4), Liste_insultes("la merde", 5), Liste_insultes("une pyramide", 5), Liste_insultes("en cp pour réussir", 5), Liste_insultes("de vie", 5)]
 
     def generate_random_list(self):
