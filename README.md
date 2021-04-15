@@ -22,6 +22,6 @@ répartition des taches :
 
 seif : création de la racine du projet, c'est a dire création des classes avec les import, le main
 Amine : amélioration des classes et des programmes
-Coriane : finition des programmes et asoutenus le groupe 
+Coriane : finition des programmes et a soutenus le groupe 
 
 
