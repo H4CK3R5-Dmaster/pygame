@@ -5,13 +5,8 @@ from random import randint
 
 class PLAYER:
     def __init__(self, name, caractere):
-        self.pv = 200
+        self.pv = 350
         self.name = name
         self.character = caractere
-        if self.character == "Dame":
-            self.type = "ground"
-    # def choose_insult(self):
 
-    # def display_list(self)
 
-    # def choose_insult(self,)
