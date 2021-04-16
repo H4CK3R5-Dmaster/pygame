@@ -42,7 +42,6 @@ class INSULT:
              Liste_insultes("ton frère", 10), Liste_insultes("ton habillage", 12), Liste_insultes("ton chien", 6), Liste_insultes("ton chat", 6),
               Liste_insultes("ton hamster", 6), Liste_insultes("ton voisin", 6), Liste_insultes("ton enfant", 15),
                Liste_insultes("ta voiture", 12), Liste_insultes("ton garage", 10), Liste_insultes("ton dauphin", 15), Liste_insultes("Ta famille", 18), Liste_insultes("Ton chapeau", 18)]
-        # si vous faites des changements dans les verbes veuillez me prevenir(juste les verbes pas verbe_adj)
         self.Verbe = [Liste_insultes("es(t)", 7), Liste_insultes("n'es(t) pas", 8), Liste_insultes(
             "n'es(t) pas", 9), Liste_insultes("a(s)", 10), Liste_insultes("n'a(s) pas", 10), Liste_insultes("n'a(s) pas regardé", 6), Liste_insultes("rassemble(s) à", 6), Liste_insultes("ne connait pas", 6), Liste_insultes("ne sait pas", 7), Liste_insultes("n'a(s) jamais regardé", 8)]
         self.Verbe_adj = [Liste_insultes("es(t) lent comme", 13), Liste_insultes(
@@ -52,59 +51,53 @@ class INSULT:
         self.COD = [Liste_insultes("star wars", 9), Liste_insultes("le train", 7), Liste_insultes("l'intelligence", 5), Liste_insultes("l'honneur", 7), Liste_insultes("Prison Break", 9), Liste_insultes("La casa del papel", 9), Liste_insultes(
             "la maison", 8), Liste_insultes("la merde", 7), Liste_insultes("une pyramide", 12), Liste_insultes("toi", 9), Liste_insultes("la/de vie", 10), Liste_insultes("la vache", 12)]
 
-        # ne pas toucher ca
         self.liaison = ["et", "et", "et", "et", "et", "et",
                         "et", "et", "et", "et", "et", "et", "et", "et", "et", "et", "et", "et", "et", "et", "et"]
 
     def generate_random_list(self):
         Random_List = []
         if len(self.Sujet) > 0:
-            sujet = randint(4, 5)
+            sujet = randint(4, 5) # combien de fois on aura un sujet dans la liste
             suj_val = randint(0, len(self.Sujet)-1)
             for j in range(0, sujet, 1):
                 Random_List.append(self.Sujet[suj_val].name)
-                # self.Sujet.remove(self.Sujet[suj_val])
                 suj_val = randint(0, len(self.Sujet)-1)
             while self.Sujet[suj_val].name in Random_List:
                 suj_val=randint(0,len(self.Sujet)-1)
         if len(self.Verbe) > 0:
-            verbe = randint(2, 3)
+            verbe = randint(2, 3)# combien de fois on aura un verbe dans la liste
             ver_val = randint(0, len(self.Verbe)-1)
             for vb in range(0, verbe, 1):
                 Random_List.append(self.Verbe[ver_val].name)
-                # self.Verbe.remove(self.Verbe[ver_val])
                 ver_val = randint(0, len(self.Verbe)-1)
             while self.Verbe[ver_val].name in Random_List:
                 ver_val=randint(0,len(self.Verbe)-1)
         if len(self.Verbe_adj) > 0:
-            verbe_adj = randint(2, 3)
+            verbe_adj = randint(2, 3)# combien de fois on aura un verbe_adj dans la liste
             ver_adj_val = randint(0, len(self.Verbe_adj)-1)
             for vb_adj in range(0, verbe_adj, 1):
                 Random_List.append(self.Verbe_adj[ver_adj_val].name)
-                # self.Verbe_adj.remove((self.Verbe_adj[ver_adj_val]))
                 ver_adj_val = randint(0, len(self.Verbe_adj)-1)
             while self.Verbe[ver_adj_val].name in Random_List:
                 ver_adj_val=randint(0,len(self.Verbe_adj)-1)
         if len(self.Adj) > 0:
-            adjective = randint(2, 3)
+            adjective = randint(2, 3)# combien de fois on aura un adjectif dans la liste
             adj_val = randint(0, len(self.Adj)-1)
             for adj in range(0, adjective, 1):
                 Random_List.append(self.Adj[adj_val].name)
-                # self.Adj.remove(self.Adj[adj_val])
                 adj_val = randint(0, len(self.Adj)-1)
                 while self.Adj[adj_val].name in Random_List:
                     adj_val=randint(1,len(self.Adj)-1)
         if len(self.COD) > 0:
-            cod_rep = randint(2, 3)
+            cod_rep = randint(2, 3)# combien de fois on aura un COD dans la liste
             cod_val = randint(0, len(self.COD)-1)
             for cod_i in range(0, cod_rep, 1):
                 Random_List.append(self.COD[cod_val].name)
-                # self.COD.remove(self.COD[cod_val])
                 cod_val = randint(0, len(self.COD)-1)
                 while self.COD[cod_val].name in Random_List:
                     cod_val=randint(0,len(self.COD)-1)
         if len(self.liaison) > 0:
-            lie_rep = randint(2, 3)
+            lie_rep = randint(2, 3)# combien de fois on aura une liaison dans la liste
             lie_val = randint(0, len(self.liaison)-1)
             for lie_i in range(0, lie_rep, 1):
                 Random_List.append(self.liaison[lie_val])
