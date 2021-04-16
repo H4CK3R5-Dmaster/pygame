@@ -46,8 +46,8 @@ class INSULT:
         self.Verbe = [Liste_insultes("es(t)", 7), Liste_insultes("n'es(t) pas", 8), Liste_insultes(
             "n'es(t) pas", 9), Liste_insultes("a(s)", 10), Liste_insultes("n'a(s) pas", 10), Liste_insultes("n'a(s) pas regardé", 6), Liste_insultes("rassemble(s) à", 6), Liste_insultes("ne connait pas", 6), Liste_insultes("ne sait pas", 7), Liste_insultes("n'a(s) jamais regardé", 8)]
         self.Verbe_adj = [Liste_insultes("es(t) lent comme", 13), Liste_insultes(
-            "es(t) stupide comme", 14), Liste_insultes("es(t) con comme", 14), Liste_insultes("est bete comme", 16), Liste_insultes("est aveugle comme", 15), Liste_insultes("es(t) idiot comme", 13), Liste_insultes("es(t) pauvre comme", 10)]
-        self.Adj = [Liste_insultes("une stupide", 10), Liste_insultes("un(e) con", 8), Liste_insultes("n'a(s) pas de vie comme", 10), Liste_insultes("es(t) trop fine comme", 12), Liste_insultes("un(e) bete", 14), Liste_insultes(
+            "es(t) stupide comme", 14), Liste_insultes("es(t) con comme", 14), Liste_insultes("est bete comme", 16), Liste_insultes("n'a(s) pas de vie comme", 10), Liste_insultes("es(t) trop fine comme", 12), Liste_insultes("est aveugle comme", 15), Liste_insultes("es(t) idiot comme", 13), Liste_insultes("es(t) pauvre comme", 10)]
+        self.Adj = [Liste_insultes("une stupide", 10), Liste_insultes("un(e) con", 8), Liste_insultes("un(e) bete", 14), Liste_insultes(
             "intelligent(e)", 6), Liste_insultes("un petit con", 5), Liste_insultes("un grand con", 7), Liste_insultes("un(e) idiot", 7), Liste_insultes("un(e) pauvre", 7), Liste_insultes("un vieux", 12)]
         self.COD = [Liste_insultes("star wars", 9), Liste_insultes("le train", 7), Liste_insultes("l'intelligence", 5), Liste_insultes("l'honneur", 7), Liste_insultes("Prison Break", 9), Liste_insultes("La casa del papel", 9), Liste_insultes(
             "la maison", 8), Liste_insultes("la merde", 7), Liste_insultes("une pyramide", 12), Liste_insultes("toi", 9), Liste_insultes("la/de vie", 10), Liste_insultes("la vache", 12)]
@@ -59,7 +59,7 @@ class INSULT:
     def generate_random_list(self):
         Random_List = []
         if len(self.Sujet) > 0:
-            sujet = randint(3, 5)
+            sujet = randint(4, 5)
             suj_val = randint(0, len(self.Sujet)-1)
             for j in range(0, sujet, 1):
                 Random_List.append(self.Sujet[suj_val].name)
@@ -104,7 +104,7 @@ class INSULT:
                 while self.COD[cod_val].name in Random_List:
                     cod_val=randint(0,len(self.COD)-1)
         if len(self.liaison) > 0:
-            lie_rep = randint(0, 2)
+            lie_rep = randint(2, 3)
             lie_val = randint(0, len(self.liaison)-1)
             for lie_i in range(0, lie_rep, 1):
                 Random_List.append(self.liaison[lie_val])
