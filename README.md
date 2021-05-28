@@ -1,7 +1,7 @@
 
- ============================
-|Projet simulateur d'insultes|
-|        en Python           |
+ 
+Projet simulateur d'insultes
+        en Python           
  ============================
 
 fait par Mohamed Amine Tarhouni, Leichnig Coriane, Fekaier Seif
